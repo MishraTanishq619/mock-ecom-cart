@@ -28,6 +28,14 @@ npm run dev
 - `src/lib` – API helper
 - `src/components` – Header, ToastHost
 
+## Screenshots
+
+![Screenshot](<public/Screenshot From 2025-11-08 11-49-59.png>)
+![Screenshot](<public/Screenshot From 2025-11-08 11-50-34.png>) 
+![Screenshot](<public/Screenshot From 2025-11-08 11-50-46.png>) 
+![Screenshot](<public/Screenshot From 2025-11-08 11-50-52.png>) 
+![Screenshot](<public/Screenshot From 2025-11-08 11-51-08.png>) 
+
 ## Notes
 - Cart hydrates from backend at app start.
 - Add to Cart increments by 1; quantity controls on Cart page.
