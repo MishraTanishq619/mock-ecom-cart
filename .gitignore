@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# Production
+.env
+.env.local
+
+# Cache
+.vscode/.cache
+
+# IDEs and editors
+.vscode/
+
+
+# Logs and coverage
+coverage/
+*.log
