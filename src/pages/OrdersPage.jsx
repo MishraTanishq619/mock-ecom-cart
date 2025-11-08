@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { api } from '../lib/api';
+import { Link } from 'react-router-dom';
 
 function formatDate(ts) {
   return new Date(ts).toLocaleString(undefined, {
@@ -43,7 +44,7 @@ export default function OrdersPage() {
 
   if (error) return <div className="text-red-600">{error}</div>;
 
-  if (!orders.length) return <div className="text-center mt-10">No past orders yet. <a href="/" className="text-blue-600 underline">Browse products</a></div>;
+  if (!orders.length) return <div className="text-center mt-10">No past orders yet. <Link to="/" className="text-blue-600 underline">Browse products</Link></div>;
 
   return (
     <div className="space-y-4">

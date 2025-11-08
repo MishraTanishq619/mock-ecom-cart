@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { api } from '../lib/api';
 import { toastBus } from '../context/toastBus';
+import { Link } from 'react-router-dom';
 
 export default function CheckoutPage() {
   const { items, total, refresh } = useCart();
@@ -57,7 +58,7 @@ export default function CheckoutPage() {
           <div className="card max-w-sm w-full text-center">
             <h2 className="text-lg font-semibold mb-2">Order Successful</h2>
             <p className="text-sm mb-4">Receipt ID: <span className="font-mono text-xs">{receiptId}</span></p>
-            <a href="/" className="btn w-full">Back to Products</a>
+            <Link to="/" className="btn w-full">Back to Products</Link>
           </div>
         </div>
       )}

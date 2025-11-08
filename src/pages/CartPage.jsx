@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
 export default function CartPage() {
@@ -49,7 +50,7 @@ export default function CartPage() {
 
       <div className="mt-6 flex items-center justify-between">
         <div className="text-lg font-semibold">Total: ₹ {total.toFixed(2)}</div>
-        <a href="/checkout" className="btn">Checkout</a>
+          <Link to="/checkout" className="btn">Checkout</Link>
       </div>
     </div>
   );
